@@ -63,6 +63,18 @@ namespace ConsoleApp1
 
             CustomerBusinessLogic cbl = new CustomerBusinessLogic();
             Console.WriteLine("Dependency Injection Prinicple - " + cbl.GetCustomerName(101));
+
+
+            Console.WriteLine(">>>>>>>>>>>> Method Hiding <<<<<<<<<<<<<<<<");
+           FullTimeEmployee fte = new FullTimeEmployee();
+            fte.fistName = "Prasanth";
+            fte.lastName = "Reddy";
+            fte.printFullname();
+
+            PartTimeEmployee pte = new PartTimeEmployee();
+            pte.fistName = "PRCV";
+            pte.lastName = "R";
+            pte.printFullname();
         }
         public override string printString(string name)
         {
